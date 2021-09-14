@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="author" content="Frederic M.S">
+    <title> Belajar Web - Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="shortcut icon" href="2-26689_web-clipart.png">
+</head>
+<body>
+    <div class="head">
+        <div class="head-judul">Belajar Web</div> 
+        <div class="head-navbar">
+            <ul>
+                <li><a class = "link-login" href = "login.html">Log In</a></li>
+                <li><a class = "link-navbar" href = "contact.html">Hubungi Kami</a></li>
+                <li><a class = "link-navbar" href = "pelajaran.html">Pelajaran</a></li>
+                <li><a class = "link-navbar" href = "index.html">Tentang</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        <form action = "pelajaran.html" class = "form">
+            <h1 class = "form-title">Login</h1>
+            <p class = "label-input">Username</p>
+            <input type = "text" class = "input-box" name="username" placeholder="Username" required>
+            <p class = "label-input">Password</p>
+            <input type = "password" id = "password" name = "password" placeholder="Password" pattern = "(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title = "Harus mengandung minimal satu angka, satu huruf besar, satu huruf kecil, dan paling sedikit 8 karakter atau lebih" required><br>
+            <input type = "submit" class = "submit" value = "Login">
+            <p class = "label-input">Belum punya akun? Daftar di <a class = "link-navbar" href = "daftar.html">sini</a></p>
+        </form>
+        <div id="message">
+            <h3>Password harus terdapat:</h3>
+            <p id="letter" class="invalid">Satu <b>huruf</b> kecil</p>
+            <p id="capital" class="invalid">Satu <b>huruf kapital (uppercase)</p>
+            <p id="number" class="invalid">Satu <b>angka</b></p>
+            <p id="length" class="invalid">Minimum <b>8 karakter</b></p>
+        </div>
+    </div>
+    <script src ="login.js"></script>
+</body>
+</html>
