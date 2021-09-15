@@ -1,5 +1,7 @@
 body{
   margin: 0;
+  opacity: 0;
+  transition: opacity .5s;
 }
 
 .head, .icon, .author, h4, .link, .link-login, .link-navbar, .Name, .Quote, .label-input, .form-title, .input-box, ::placeholder{
@@ -31,7 +33,6 @@ ul{
 .head-navbar li{
   float: right;
   padding: 15px 30px;
-  
 }
 
 li{

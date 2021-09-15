@@ -1,5 +1,7 @@
 body{
   margin: 0;
+  opacity: 0;
+  transition: opacity .5s;
 }
 
 .head, .icon, h1, h2, h4, .link, .link-navbar, .link-login, .Name, .Quote{
@@ -44,10 +46,38 @@ li{
 .main{
   padding-top: 20px;
   padding-bottom: 50px;
-  background-image: url("ilya-pavlov-OqtafYT5kTw-unsplash.jpg");
+  background-image: url("lauren-mancke-aOC7TSLb1o8-unsplash.jpg");
   background-size: cover;
   border-left: 5px solid #c0eb25;
   border-right: 5px solid #c0eb25;
+}
+
+.judul-utama{
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Comic Sans MS';
+  font-size: 30pt;
+  border: 4px dashed #20bcd5;
+  padding: 5px 15px;
+  letter-spacing: 4px;
+}
+
+.html{
+  margin-left: 20px;
+}
+
+.css{
+  margin-right: 20px;
+  text-align: right;
+}
+
+.judul-html{
+  text-align: left;
+}
+
+.judul-css{
+  text-align: right;
 }
 
 h1, h2, h4, p{
@@ -56,12 +86,6 @@ h1, h2, h4, p{
 
 .Belajar-web{
   letter-spacing: 4px;
-}
-
-h1{
-  font-family: 'Times New Roman', Times, sans-serif;
-  font-size: 50pt;
-  letter-spacing: 5px;
 }
 
 h4{
@@ -83,11 +107,16 @@ h4{
   border-bottom: 10px solid #b2cedc;
 }
 
+.html{
+  text-align: left;
+}
+
 h2{
   padding-top: 15px;
   font-family: Calibri;
   font-size: 14pt;
   margin-bottom: 10px;
+  letter-spacing: 2.5px;
 }
 
 .link, .link-navbar, .link-login{
