@@ -4,13 +4,13 @@ body{
   transition: opacity .5s;
 }
 
-.head, .icon, h1, h2, h4, .link, .link-navbar, .link-login, .Name, .Quote{
+.head, .icon, h1, h2, h4, p, .link, .link-navbar, .link-login, .Name, .Quote, .materi li{
   color: white;
 }
 
 .head{
   background-color: #28ceca;
-  height: 80px;
+  height: 100px;
   padding-top: 5px;
   border-top: 10px solid aqua;
   border-left: 5px solid aqua;
@@ -33,20 +33,22 @@ ul{
 .head-navbar li{
   float: right;
   padding: 15px 30px;
-  
 }
 
-li{
+.judul, .materi{
   font-family: Calibri;
   font-size: 14pt;
+}
+
+.judul{
   list-style: none;
   display: list-item;
 }
 
 .main{
   padding-top: 20px;
-  padding-bottom: 50px;
-  background-image: url("lauren-mancke-aOC7TSLb1o8-unsplash.jpg");
+  height: 850px;
+  background-image: url("lauren-mancke-aOC7TSLb1o8-unsplash (final).png");
   background-size: cover;
   border-left: 5px solid #c0eb25;
   border-right: 5px solid #c0eb25;
@@ -56,6 +58,7 @@ li{
   width: 40%;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 35px;
   font-family: 'Comic Sans MS';
   font-size: 30pt;
   border: 4px dashed #20bcd5;
@@ -63,24 +66,67 @@ li{
   letter-spacing: 4px;
 }
 
-.html{
-  margin-left: 20px;
+.belajar{
+  display: block;
+  text-align: center;
 }
 
-.css{
+.materi{
+  list-style-type: lower-alpha;
+}
+
+p{
+  font-size: 11pt;
+  text-align: justify;
   margin-right: 20px;
-  text-align: right;
+  line-height: 25px;
+}
+
+.html, .css, .js, .php{
+  width: 25%;
+  float: left;
+}
+
+.gambar-html{
+  color: darkorange;
 }
 
 .judul-html{
+  text-align: center;
+  margin-right: 6px;
+}
+
+.judul-html, p{
+  margin-left: 20px;
+}
+
+li{
+  padding-bottom: 10px;
+  font-size: 13pt;
   text-align: left;
 }
 
-.judul-css{
-  text-align: right;
+.judul-html, .judul-css, .judul-js, .judul-php{
+  margin-top: 0;
+  font-family: 'Centaur';
+  font-size: 16pt;
+  font-weight: bold;
+  line-height: 25px;
 }
 
-h1, h2, h4, p{
+.gambar-css{
+  color: rgb(76, 110, 245);
+}
+
+.gambar-js{
+  color: yellow;
+}
+
+.gambar-php{
+  color: purple;
+}
+
+h1, h2, h4{
   text-align: center;
 }
 
@@ -95,28 +141,60 @@ h4{
   font-weight: normal;
 }
 
+.persentase{
+  height: 325px;
+}
+
+.web-percentage{
+  font-family: 'Comic Sans MS';
+  font-size: 20pt;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 3.5px;
+}
+
+.judul-web{
+  font-family: Calibri;
+  font-size: 14pt;
+  font-weight: normal;
+  margin-bottom: 10px;
+  margin-bottom: 5px;
+}
+
+.web-percentage, .judul-web{
+  color: cornflowerblue;
+}
+
+.w3-light-grey{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .slogan{
   font-size: 12pt;
 }
 
 .footer{
   background-color: #31516a;
-  height: 85px;
+  height: 105px;
   border-left: 5px solid #b2cedc;
   border-right: 5px solid #b2cedc;
   border-bottom: 10px solid #b2cedc;
 }
 
-.html{
-  text-align: left;
-}
-
-h2{
+h2, .Belajar-web{
   padding-top: 15px;
   font-family: Calibri;
   font-size: 14pt;
   margin-bottom: 10px;
   letter-spacing: 2.5px;
+}
+
+.Belajar-web{
+  font-weight: bold;
 }
 
 .link, .link-navbar, .link-login{
@@ -153,10 +231,4 @@ h2{
 
 .link:active, .link-login:active, .btn-wrapper a:active, .btn-google:active, .btn-email:active, .btn-facebook:active, .btn-study:active{
   color: black;
-}
-
-.deskripsi{
-  color: cornflowerblue;
-  font-family: 'Calibri';
-  font-size: 13pt;
 }
